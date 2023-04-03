@@ -1,5 +1,8 @@
 pipeline {
      agent any
+      tools { 
+      gradle 'Gradle_Home' 
+    }
      stages {
          stage('Clean Workspace') {
              steps {
